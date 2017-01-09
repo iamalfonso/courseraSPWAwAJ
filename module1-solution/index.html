@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Module 1 solution</title>
+	<script src="angular.min.js"></script>
+	<script src="app.js"></script>
+	<style>
+		p {
+			font-size: 22px;
+		}
+		.red-text {
+			color: #F20000;
+		}
+
+		.green-text {
+			color: #308514;
+		}
+		.red-input {
+			border: 1px solid #F20000;
+		}
+
+		.green-input {
+			border: 1px solid #308514;
+		}		
+	</style>
+</head>
+<body ng-app="LunchCheck">
+	<h1>Module 1 Solution</h1>
+	<div ng-controller="LunchCheckController">
+		<h3>List items you usually eat for lunch (comma-separated)</h3>
+		<h4>* Empty items not considered</h4>
+		<input type="text" ng-model="list" ng-class="inputClass" placeholder="comma-separated list" size="50">
+		<input type="button" value="Check If Too Much" ng-click="check();">
+		<p ng-class="msgClass">{{ message }}</p>
+	</div>
+</body>
+</html>
