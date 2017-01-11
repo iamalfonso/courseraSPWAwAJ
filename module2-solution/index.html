@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Module 2 solution</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="angular.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<body ng-app="ShoppingListCheckOff">
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	    	<h1>Module 2: Shopping list</h1>
+	    </div>
+	  </div>
+	</nav>
+
+	<div class="main-container">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6 col-xs-12" ng-controller="ToBuyController as toBuy">
+					<h2><span class="glyphicon glyphicon-shopping-cart"></span> My shopping list</h2>
+					<div class="messages" ng-if="toBuy.items.length === 0">Everything is bought</div>
+					<ul>
+						<li ng-repeat="item in toBuy.items">
+							<label class="buy-btn" ng-click="toBuy.buy($index)">Bought<span></span></label>
+							Buy <span>{{ item.quantity }}</span> <span>{{ item.name }}</span>						
+						</li>
+					</ul>
+				</div>	
+
+				<div class="col-sm-6 col-xs-12" ng-controller="AlreadyBoughtController as alreadyBought">
+					<h2><span class="glyphicon glyphicon-check"></span> My bought items</h2>
+					<div class="messages" ng-if="alreadyBought.items.length === 0">Nothing bought yet</div>
+					<ul>
+						<li ng-repeat="item in alreadyBought.items"><span class="check">✓</span>Bought <span>{{ item.quantity }}</span> <span>{{ item.name }}</span></li>
+					</ul>				
+				</div>						
+			</div>
+		</div>
+	</div>
+
+	<div class="main-footer text-center">
+		by <span class="mename">Alfonso Marquez</span> <span class="glyphicon glyphicon-copyright-mark"></span> 2017 | Coursera: Single Page Web Applications with AngularJS
+	</div>
+</body>
+</html>

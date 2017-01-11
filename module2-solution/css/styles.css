@@ -1,0 +1,87 @@
+body {
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans;
+	background-color: #FFFADB;
+}
+
+.navbar {
+	background-color: #EB6D2F;
+	color: #FCD6C2;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+ul {
+	list-style-type: none;
+	margin-top: 50px;
+}
+
+.main-container {
+	margin: 0px 50px;
+}
+
+.main-footer {
+	margin: 100px 0 0 0;
+	color: #8F8F8F;
+}
+
+.mename {
+	font-size: 1.2em;
+	color: #6B6B6B;
+}
+
+.messages {
+	margin-top: 50px;
+	font-size: 1.3em;
+	color: #C21D1D;
+}
+
+.check {
+	font-size: 1.5em;
+	margin-right: 10px;
+	color: #1F993B;
+}
+
+.buy-btn {
+	background-color: #FFA273;
+	border: 1px solid #E07843;
+	font-size: 0.7em;
+	margin-right: 20px;
+	cursor: pointer;
+	position: relative;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.buy-btn span {
+	position: absolute;
+	top: -3px;
+	right: -23px;
+	font-size: 2em;	
+	color: #E07843;
+}
+
+.buy-btn:hover {
+	background-color: #FFFFFF;
+}
+
+.buy-btn:hover span:after {
+	content: "✓";
+}
+
+/* Applies to small, medium and large devices */
+@media (max-width: 767px) {
+	h1 {
+		font-size: 2em;
+	}
+
+	.main-container {
+		margin: 0px 7px;
+	}
+
+	.main-footer {
+		margin: 50px 0 0 0;
+	}	
+}
