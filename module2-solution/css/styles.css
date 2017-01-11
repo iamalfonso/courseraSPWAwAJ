@@ -63,15 +63,20 @@ ul {
 	color: #E07843;
 }
 
-.buy-btn:hover {
-	background-color: #FFFFFF;
-}
 
-.buy-btn:hover span:after {
-	content: "✓";
-}
 
 /* Applies to small, medium and large devices */
+@media (min-width: 768px) {
+	.buy-btn:hover {
+		background-color: #FFFFFF;
+	}
+
+	.buy-btn:hover span:after {
+		content: "✓";
+	}
+}
+
+/* Applies to exra small devices */
 @media (max-width: 767px) {
 	h1 {
 		font-size: 2em;
@@ -84,10 +89,6 @@ ul {
 	.main-footer {
 		margin: 50px 0 0 0;
 	}	
-
-	.buy-btn:hover span:after {
-		content: "";
-	}
 
 	ul {
 		margin-left: -40px;
