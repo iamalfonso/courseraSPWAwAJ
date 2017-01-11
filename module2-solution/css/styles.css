@@ -93,4 +93,8 @@ ul {
 	ul {
 		margin-left: -40px;
 	}
+
+	.buy-btn {
+		margin-right: 5px;
+	}	
 }
