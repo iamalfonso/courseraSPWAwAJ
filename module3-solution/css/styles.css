@@ -93,6 +93,9 @@ ul {
 
 /* Applies to exra small devices */
 @media (max-width: 767px) {
+	.main-container {
+		margin: 0px 10px;
+	}	
 	.menu-item .item-name {
 		font-size: 0.8em;
 		font-weight: bold;
