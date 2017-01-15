@@ -42,8 +42,13 @@ ul {
 	border-bottom: 1px solid #EB6D2F;
 	margin: 10px;
 	padding: 3px;
-	width: 50%;
+	width: 80%;
 	position: relative;
+	display: block;
+}
+
+.menu-item div {
+	display: inline-block;
 }
 
 .menu-item .item-name {
@@ -62,13 +67,7 @@ ul {
 	margin-right: 5px;
 	position: absolute;
 	right: 0px;
-}
-
-.menu-item .item-btn:hover {
-	font-size: 1em;
-	margin-right: 5px;
-	position: absolute;
-	right: 0px;
+	top: 0px;
 }
 
 .menu-item .item-btn span{
@@ -79,14 +78,38 @@ ul {
 	margin-left: 15px;
 	font-style: italic;
 	color: #444444;
+	width: 80%;
 }
 
 /* Applies to small, medium and large devices */
 @media (min-width: 768px) {
-
+	.menu-item .item-btn:hover {
+		font-size: 1em;
+		margin-right: 5px;
+		position: absolute;
+		right: 0px;
+	}
 }
 
 /* Applies to exra small devices */
 @media (max-width: 767px) {
-
+	.menu-item .item-name {
+		font-size: 0.8em;
+		font-weight: bold;
+		margin-left: 5px;
+	}	
+	.menu-item .short-name {
+		font-size: 1em;
+	}	
+	.menu-item .item-btn {
+		font-size: 0.6em;
+		margin-right: 5px;
+	}
+	.menu-item div {
+		display: block;
+	}
+	.menu-item p {
+		margin-left: 8px;
+		font-size: 0.6em;
+	}	
 }
