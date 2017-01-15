@@ -20,7 +20,7 @@
 			nitdown.isFound = true;	
 			if (nitdown.searchTerm.trim().length === 0)	{
 				nitdown.isFound =  false;
-				nitdown.found = [];
+				nitdown.found = [{}];
 				return true;
 			}
 			MenuSearchService.getMatchedMenuItems(nitdown.searchTerm)
