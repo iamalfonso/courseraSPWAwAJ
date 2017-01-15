@@ -96,6 +96,13 @@ ul {
 	.main-container {
 		margin: 0px 10px;
 	}	
+	.menu-item {
+		margin-top: 5px;
+		padding: 1px;
+		width: 80%;
+		position: relative;
+		display: block;
+	}	
 	.menu-item .item-name {
 		font-size: 0.8em;
 		font-weight: bold;
