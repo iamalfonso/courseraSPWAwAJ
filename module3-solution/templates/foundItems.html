@@ -1,0 +1,9 @@
+<ul>
+	<li ng-repeat="item in items">
+		<div class="menu-item">
+			<label class="short-name">{{ item.short_name }}</label><label class="item-name">{{ item.name }}</label>
+			<label class="item-btn" ng-click="onRemove({ index: $index })"><span class="glyphicon glyphicon-remove red"></span> Don't want this one!</label>
+			<p>{{ item.description }}</p>
+		</div>
+	</li>
+</ul>

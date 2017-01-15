@@ -1,0 +1,92 @@
+body {
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans;
+	background-color: #FFFADB;
+}
+
+.navbar {
+	background-color: #EB6D2F;
+	color: #FCD6C2;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+ul {
+	list-style-type: none;
+	margin-top: 50px;
+}
+
+.main-container {
+	margin: 0px 50px;
+}
+
+.main-footer {
+	margin: 100px 0 0 0;
+	color: #8F8F8F;
+}
+
+.mename {
+	font-size: 1.2em;
+	color: #6B6B6B;
+}
+
+.messages {
+	margin-top: 50px;
+	font-size: 1.3em;
+	color: #C21D1D;
+}
+
+.menu-item {
+	border-bottom: 1px solid #EB6D2F;
+	margin: 10px;
+	padding: 3px;
+	width: 50%;
+	position: relative;
+}
+
+.menu-item .item-name {
+	color: #EB6D2F;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-left: 15px;
+}
+
+.menu-item .short-name {
+	font-size: 1.3em;
+}
+
+.menu-item .item-btn {
+	font-size: 0.8em;
+	margin-right: 5px;
+	position: absolute;
+	right: 0px;
+}
+
+.menu-item .item-btn:hover {
+	font-size: 1em;
+	margin-right: 5px;
+	position: absolute;
+	right: 0px;
+}
+
+.menu-item .item-btn span{
+	color: #E83131;
+}
+
+.menu-item p {
+	margin-left: 15px;
+	font-style: italic;
+	color: #444444;
+}
+
+/* Applies to small, medium and large devices */
+@media (min-width: 768px) {
+
+}
+
+/* Applies to exra small devices */
+@media (max-width: 767px) {
+
+}
