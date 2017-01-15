@@ -18,6 +18,7 @@
 
 		nitdown.narrowitdown = function() {	
 			nitdown.isFound = true;	
+			nitdown.found = [];
 			if (nitdown.searchTerm.trim().length === 0)	{
 				nitdown.isFound =  false;
 				return true;
