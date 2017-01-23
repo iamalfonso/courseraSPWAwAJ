@@ -37,8 +37,7 @@
       templateUrl: 'src/menuApp/templates/menu-items.template.html',
       controller: 'MenuItemsController as menuItems',
       params: {
-        categoryShortName: null,
-        categoryName: null
+        categoryShortName: null
       },
       resolve: {
         menuList: ['MenuDataService', '$stateParams', function (MenuDataService, $stateParams) {

@@ -3,7 +3,7 @@
 <h2 class="text-center">Menu Categories</h2>
 
 <div ng-repeat="cat in $ctrl.items" 
-		ui-sref="categoryList.menuItems({ categoryShortName: cat.short_name, categoryName: cat.name })">
+		ui-sref="categoryList.menuItems({ categoryShortName: cat.short_name })">
 		<div class="category text-center">
 			{{ cat.name }}
 		</div>
