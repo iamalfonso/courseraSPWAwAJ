@@ -1,0 +1,10 @@
+<br>
+<a ui-sref="home" class="back-home-btn">&lt; Back to home</a>
+<h2 class="text-center">Menu Categories</h2>
+
+<div ng-repeat="cat in $ctrl.items" 
+		ui-sref="categoryList.menuItems({ categoryShortName: cat.short_name, categoryName: cat.name })">
+		<div class="category text-center">
+			{{ cat.name }}
+		</div>
+</div>

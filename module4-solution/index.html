@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Module 4 - Solution</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body ng-app="MenuApp">
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	    	<h1>Module 4: Restaurant Menu</h1>
+	    </div>
+	  </div>
+	</nav>
+
+	<ui-view></ui-view>
+
+	<div class="main-footer text-center">
+		by <span class="mename">Alfonso Marquez</span> <span class="glyphicon glyphicon-copyright-mark"></span> 2017 | Coursera: Single Page Web Applications with AngularJS
+	</div>
+	
+	<!-- Libaries -->
+	<script src="lib/angular.min.js"></script>
+	<script src="lib/angular-ui-router.min.js"></script>
+
+	<!-- Modules -->
+	<script src="src/menuApp/menuapp.module.js"></script>	
+	<script src="src/data/data.module.js"></script>	
+
+	<!-- Routes -->
+	<script src="src/routes.js"></script>	
+
+	<!-- Artifacts -->
+	<script src="src/data/data.constants.js"></script>		
+	<script src="src/data/menudata.service.js"></script>		
+
+	<!-- Artifacts Categories -->
+	<script src="src/menuApp/categories.component.js"></script>		
+	<script src="src/menuApp/categories.controller.js"></script>		
+	<script src="src/menuApp/menuItems.controller.js"></script>		
+</body>
+</html>
