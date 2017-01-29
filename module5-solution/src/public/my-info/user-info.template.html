@@ -2,7 +2,7 @@
 <h2>{{ $ctrl.info.firstName }} {{ $ctrl.info.lastName }}</h2>
 <h4><span class="my-info-label">Email:</span> {{ $ctrl.info.email }}</h4>
 <h4><span class="my-info-label" ng-if="$ctrl.info.phone">Phone:</span> {{ $ctrl.info.phone }}</h4>
-<h4><span class="my-info-label">Favorite dish:</span></h4>
+<h4><span class="my-info-label">Favorite dish:</span> {{ $ctrl.info.favoriteDish }}</h4>
 <div class="my-favorite-dish">
 	<img class="img-responsive" width="250" height="150" ng-src="{{$ctrl.basePath}}/images/{{$ctrl.info.favoriteDish}}.jpg" alt="{{$ctrl.info.dishName}}">
 	<h3>{{ $ctrl.dishName }}</h3>
