@@ -1,0 +1,56 @@
+<div class="container">
+  <h2 id="menu-categories-title" class="text-center">Sign up to receive our newsletter!</h2>
+  <div class="text-center">
+    Sign up to receive our newsletter with promotions, specials and future events.
+  </div>
+
+  <div class="col-lg-4 col-md-4">
+	  <form name="signupForm" ng-submit="signupCtrl.submit();" novalidate>
+
+	    <div class="form-group">
+		    <label for="firstName">* First name</label>
+		    <input type="input" class="form-control" name="firstName" 
+		    		ng-model="signupCtrl.form.firstName" 
+		    		required>
+	  	</div>	
+
+	    <div class="form-group">
+		    <label for="lastName">* Last name</label>
+		    <input type="input" class="form-control" name="lastName" 
+		    		ng-model="signupCtrl.form.lastName" 
+		    		required>
+	  	</div>	
+
+	    <div class="form-group">
+		    <label for="email">* Email</label>
+		    <input type="email" class="form-control" name="email" 
+		    		ng-model="signupCtrl.form.email" 
+		    		required>
+		    <span class="error-msg" ng-if="signupForm.email.$touched && signupForm.email.$invalid">Enter a valid email address: i.e. username@domain<br></span>
+		    <small id="emailHelp" class="form-text text-muted">We'll never share your email.</small>
+	  	</div>	
+
+	    <div class="form-group">
+		    <label for="phoneNumber">Phone number</label>
+		    <input type="input" class="form-control" name="phoneNumber" placeholder="###-###-####" 
+		    		ng-model="signupCtrl.form.phone" 
+		    		pattern="(\d{3})-(\d{3})-(\d{4})">
+		    <span class="error-msg" ng-if="signupForm.phoneNumber.$touched && signupForm.phoneNumber.$invalid">Please enter your phone as ###-###-####</span>	
+	  	</div>	
+
+	    <div class="form-group">
+		    <label for="favoriteDish">* Favorite menu number (short name)</label>
+		    <input type="input" class="form-control" name="favoriteDish" 
+		    		ng-model="signupCtrl.form.favoriteDish" 
+		    		ng-model-options="{ updateOn: 'default blur', debounce: {default: 1000, blur: 0} }"
+		    		menuitem-valid
+		    		required>
+		    <span class="error-msg" ng-if="signupForm.favoriteDish.$touched && signupForm.favoriteDish.$invalid">No such menu number exists</span>	
+	  	</div>	
+
+	  	<button type="submit" class="btn btn-primary" ng-disabled="signupForm.$invalid">Sign me Up!</button>
+	  	<span class="aff-message" ng-if="signupCtrl.saved"><h4>Your information has been saved</h4></span>
+	  </form>
+  </div>
+</div>
+
